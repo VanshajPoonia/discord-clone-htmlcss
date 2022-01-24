@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,700;0,800;0,900;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -100;
+}
+.background__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.login__card__right {
+  display: none;
+}
+.login__card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding: 70px 16px 40px 16px;
+  background-color: #36393f;
+  color: white;
+}
+.login__card__left {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  margin-top: 12%;
+}
+.login__card__left__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__card__left__header__title,
+.register__card__msg {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 23px;
+  line-height: 30px;
+}
+.login__card__left__header__body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.5px;
+  line-height: 20px;
+  color: #b9bbbe;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.login__card__left__from {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__card__left__from__email,
+.login__card__left__from__password,
+.register__card__form__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.login__card__left__from__label {
+  color: #b9bbbe;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.login__card__left__from__input {
+  width: 100%;
+  border: none;
+  background-color: #303339;
+  border: 1px solid #222428;
+  padding: 10px;
+  height: 42px;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #dcddde;
+  font-family: "Open Sans", sans-serif;
+}
+.login__card__left__from__input:focus {
+  outline: none !important;
+  border: 1px solid #00b0f4;
+}
+.login__card__left__from__link {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  color: #00aff4;
+  padding-top: 4px;
+
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.login__card__left__from__loginbtn,
+.login__card__left__from__regbtn {
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #5865f2;
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+.login__card__left__from__loginbtn:hover,
+.login__card__left__from__regbtn:hover {
+  background-color: #404eed;
+}
+.login__card__left__from__regbtn {
+  color: white;
+  border: none;
+}
+.form__links {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #72767d;
+}
+.login__card__left__from__text {
+  font-family: "Open Sans", sans-serif;
+  color: #00aff4;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.login__card__left__from__text:hover,
+.login__card__left__from__link:hover {
+  text-decoration: underline;
+}
+.discord__logo {
+  position: absolute;
+  top: 20px;
+
+  width: 130px;
+  height: 36px;
+}
+
+.register__card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding: 70px 16px 40px 16px;
+  background-color: #36393f;
+  color: white;
+}
+#month,
+#day,
+#year {
+  outline: none;
+  background-color: #303339;
+  border: 1px solid #222428;
+  padding: 10px;
+  height: 42px;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(114, 118, 125);
+  font-family: "Open Sans", sans-serif;
+}
+
+#month {
+  width: 35%;
+}
+#day {
+  width: 25%;
+}
+#year {
+  width: 30%;
+}
+#day::-webkit-scrollbar {
+  width: 1px;
+}
+#year::-webkit-scrollbar {
+  width: 1px;
+}
+.register__card__date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.register__card__checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #303339;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.register__card__checkbox__text {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dcddde;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.color__change {
+  color: #00aff4;
+  padding: 0px 4px;
+  cursor: pointer;
+}
+.color__change:hover {
+  text-decoration: underline;
+}
+.tick {
+  width: 70%;
+  height: 70%;
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.disabled:hover {
+  background-color: #5865f2;
+}
+.notall {
+  display: none;
+}
+.bg {
+  background-color: #949cf7;
+}
+@media screen and (min-width: 490px) {
+  .discord__logo {
+    display: none;
+  }
+
+  .login__card,
+  .register__card {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    border-radius: 5px;
+  }
+  .login__card__left {
+    margin-top: 0px;
+  }
+  .register__card__msg {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .login__card {
+    flex-direction: row;
+    max-width: 784px;
+    justify-content: space-between;
+  }
+  .login__card__left {
+    width: 416px;
+  }
+  .login__card__right {
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .qr__div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 176px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: none;
+  }
+  .animationdiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+
+    margin-bottom: 80px;
+  }
+
+  .box1,
+  .box2 {
+    width: 10px;
+    height: 10px;
+    background-color: #404eed;
+  }
+  .box1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: b1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  .box2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    animation-name: b2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes b1 {
+    0% {
+      left: 0px;
+      top: 0px;
+      transform: rotate(90deg) scale(1);
+    }
+    25% {
+      left: 22px;
+      top: 0px;
+      transform: rotate(180deg) scale(0.7);
+    }
+    50% {
+      left: 22px;
+      top: 22px;
+      transform: rotate(270deg) scale(1);
+    }
+    75% {
+      left: 0px;
+      top: 22px;
+      transform: rotate(360deg) scale(0.7);
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+      transform: rotate(450deg) scale(1);
+    }
+  }
+  @keyframes b2 {
+    0% {
+      bottom: 0px;
+      right: 0px;
+      transform: rotate(90deg) scale(1);
+    }
+    25% {
+      bottom: 0px;
+      right: 22px;
+      transform: rotate(180deg) scale(0.6);
+    }
+    50% {
+      bottom: 22px;
+      right: 22px;
+      transform: rotate(270deg) scale(1);
+    }
+    75% {
+      bottom: 22px;
+      right: 0px;
+      transform: rotate(360deg) scale(0.6);
+    }
+    100% {
+      bottom: 0px;
+      right: 0px;
+      transform: rotate(450deg) scale(1);
+    }
+  }
+  .login__card__right__msg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login__card__right__msg__title {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .login__card__right__msg__body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: #b9bbbe;
+    padding: 0px 5px;
+  }
+  .login__card__right__qrimg__circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 36%;
+    left: 36%;
+  }
+}
+@media screen and (min-width: 830px) {
+  .background__image {
+    min-width: 1100px;
+    width: 100%;
+    height: auto;
+  }
+}

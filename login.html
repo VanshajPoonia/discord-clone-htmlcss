@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord | Login</title>
+    <link rel="stylesheet" href="./css/log_in_out.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="background">
+        <img
+          src="./images/assets/final_login_bg.png"
+          alt=""
+          class="background__image"
+        />
+      </div>
+
+      <div class="login__card">
+        <div class="login__card__left">
+          <div class="login__card__left__header">
+            <div class="login__card__left__header__title">Welcome back!</div>
+            <div class="login__card__left__header__body">
+              We're so excited to see you again!
+            </div>
+          </div>
+          <div class="login__card__left__from">
+            <div class="login__card__left__from__email">
+              <div class="login__card__left__from__label">
+                email or phone number
+              </div>
+              <input type="text" class="login__card__left__from__input" />
+            </div>
+            <div class="login__card__left__from__password">
+              <div class="login__card__left__from__label">password</div>
+              <input type="password" class="login__card__left__from__input" />
+              <div class="form__links">
+                <a href="#" class="login__card__left__from__link"
+                  >Forgot your password?</a
+                >
+              </div>
+            </div>
+            <a href="dashboard.html" class="login__card__left__from__loginbtn"
+              >Login</a
+            >
+            <div class="form__links">
+              Need a account?
+              <a href="#" class="login__card__left__from__text">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="login__card__right">
+          <div class="animationdiv">
+            <div class="box1"></div>
+            <div class="box2"></div>
+          </div>
+          <div class="qr__div">
+            <img
+              src="./images/assets/qr_code.png"
+              alt="qr-image"
+              class="login__card__right__qrimg"
+            />
+            <img
+              class="login__card__right__qrimg__circle"
+              src="./images/assets/discordlogo.png"
+              alt="discord-logo"
+            />
+          </div>
+          <div class="login__card__right__msg">
+            <div class="login__card__right__msg__title">
+              Log in with QR Code
+            </div>
+            <div class="login__card__right__msg__body">
+              Scan with <b>Discord mobile app</b> to login instantly
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="register__card notall">
+        <div class="register__card__msg">Create an account</div>
+        <div class="login__card__left__from">
+          <div class="register__card__form__div">
+            <div class="login__card__left__from__label">Email</div>
+            <input type="text" class="login__card__left__from__input" />
+          </div>
+          <div class="register__card__form__div">
+            <div class="login__card__left__from__label">username</div>
+            <input type="text" class="login__card__left__from__input" />
+          </div>
+          <div class="register__card__form__div">
+            <div class="login__card__left__from__label">password</div>
+            <input type="password" class="login__card__left__from__input" />
+          </div>
+          <div class="register__card__form__div">
+            <div class="login__card__left__from__label">date of birth</div>
+            <div class="register__card__date">
+              <select name="month" id="month">
+                <option value="Select" disabled selected>Select</option>
+              </select>
+              <select name="day" id="day">
+                <option value="Select" disabled selected>Select</option>
+              </select>
+              <select name="year" id="year">
+                <option value="select" disabled selected class="option__color">
+                  Select
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="register__card__checkbox">
+            <div class="checkbox">
+              <img
+                src="./images/assets/icons8-check-64.png"
+                alt="check"
+                class="tick notall"
+              />
+            </div>
+            <div class="register__card__checkbox__text">
+              I have read and agree to Discord's
+              <div class="color__change">Terms of Services</div>
+              and
+              <div class="color__change">Privacy Policy</div>
+            </div>
+          </div>
+          <button class="login__card__left__from__regbtn disabled">
+            Continue
+          </button>
+          <div class="form__links">
+            <a href="#" class="login__card__left__from__text gotologin"
+              >Already have an account?</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./images/assets/discord_fulllogo.svg"
+        alt="discord-logo"
+        class="discord__logo"
+      />
+    </div>
+  </body>
+  <script src="./javascript/log.js"></script>
+</html>
